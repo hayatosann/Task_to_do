@@ -29,7 +29,7 @@ class Task extends Model
             return '';
         }
 
-        return self::STATUS[$status]['class'];
+        return self::STATUS[$status]['label'];
     }
 
     public function getFormattedDueDateAttribute()
