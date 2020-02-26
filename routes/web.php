@@ -10,4 +10,8 @@ Route::post('/folders/{id}/tasks/create', 'TaskController@create');
 
 Route::get('/folders/{id}/tasks/{task_id}/edit', 'TaskController@showEditForm')->name('tasks.edit');
 Route::post('/folders/{id}/tasks/{task_id}/edit', 'TaskController@edit');
+
+Route::get('/', 'HomeController@index')->name('home');
+
+Auth::routes();
 ?>
